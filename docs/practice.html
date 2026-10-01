@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ITCO603 practice and problem-solving lab for Systems Analysis and Design.">
+  <title>Practice Lab · ITCO603</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="lecture-header practice-header">
+    <div class="container">
+      <nav class="topbar" aria-label="Course navigation">
+        <a class="brand" href="index.html">ITCO603</a>
+        <div class="top-links"><a href="index.html">Course home</a></div>
+      </nav>
+      <p class="eyebrow">Integrated practice</p>
+      <h1>Systems Analysis Problem-Solving Lab</h1>
+      <p class="hero-copy">Select a topic, generate a reproducible case, and compare your reasoning with a worked solution.</p>
+    </div>
+  </header>
+  <main class="container lecture-main">
+    <section class="section-block">
+      <p class="section-label">Case generator</p>
+      <h2>Practice across LCN1–LCN7</h2>
+      <div class="lab-controls">
+        <label for="lecture-select">Lecture topic</label>
+        <select id="lecture-select"></select>
+        <label for="lab-seed">Challenge seed</label>
+        <input id="lab-seed" type="text" value="ITCO603-practice" maxlength="40">
+        <button id="lab-generate" class="button" type="button">Generate challenge</button>
+      </div>
+      <article id="lab-problem" class="problem-card"></article>
+    </section>
+    <section class="section-block">
+      <p class="section-label">More practice</p>
+      <h2>Choose a lecture knowledge check</h2>
+      <div id="lecture-practice-links" class="lecture-grid compact-grid"></div>
+    </section>
+  </main>
+  <footer><div class="container"><strong>ITCO603 · Systems Analysis and Design</strong><span>Evidence before opinion; iteration before polish.</span></div></footer>
+  <script src="data.js"></script>
+  <script src="practice.js"></script>
+</body>
+</html>
